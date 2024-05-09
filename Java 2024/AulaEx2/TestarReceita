@@ -1,0 +1,19 @@
+
+public class TestaReceitaUniversidade {
+	public static void main(String [] args) {
+		ReceitaUniversidade ru = new ReceitaUniversidade();
+		System.out.println("Receita: " + ru.getTotalRecebido());
+		
+		Aluno a1 = new Aluno("Isaias", 101220, 350);
+		ru.receberPagamento(a1, 2);
+		System.out.println("Receita Parcial: " + ru.getTotalRecebido());
+		Aluno a2 = new Aluno ("Maria", 125841, 800);
+		ru.receberPagamento(a2, 11);
+		System.out.println("Receita Parcial: " + ru.getTotalRecebido());
+		Bolsista b1 = new Bolsista("Juliana", 100452, 1200, 500);
+		ru.receberPagamento(b1, 12);
+		System.out.println("Receita Parcial: " + ru.getTotalRecebido());
+		
+	}
+
+}

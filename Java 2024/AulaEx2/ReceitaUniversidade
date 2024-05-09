@@ -1,0 +1,16 @@
+
+public class ReceitaUniversidade {
+	private double totalRecebido;
+	
+	public ReceitaUniversidade() {
+		totalRecebido = 0;
+	}
+	public double getTotalRecebido() {
+		return totalRecebido;
+	}
+	
+	public void receberPagamento(Aluno aluno, int dia) {
+		totalRecebido += aluno.pagarMensalidade(dia);
+	}
+
+}
